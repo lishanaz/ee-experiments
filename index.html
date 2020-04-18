@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predator / Prey Model</title>
+</head>
+<body>
+    
+    <div>
+        <input type="range" id="x0" name="prey" min="0" max="20" step=".1">
+        <input type="text" id="x0Text" size ="3" value="">
+        <label for="prey">Initial Prey</label>
+    </div>
+    <div>
+        <input type="range" id="y0" name="predators" min="0" max="20" step=".1">
+        <input type="text" id="y0Text" size="3" value="">
+        <label for="predators">Initial Predators</label>
+    </div>
+    <div>
+        <input type="range" id="a" name="a" min="0" max="10" step=".1">
+        <input type="text" id="aText" size ="3" value="">
+        <label for="a">a (growth rate of prey population)</label>
+    </div>
+    <div>
+        <input type="range" id="b" name="b" min="0" max="10" step=".1">
+        <input type="text" id="bText" size ="3" value="">
+        <label for="b">b (rate of predation)</label>
+    </div>
+    <div>
+        <input type="range" id="c" name="c" min="0" max="10" step=".1">
+        <input type="text" id="cText" size ="3" value="">
+        <label for="c">c (growth rate of predator population)</label>
+    </div>
+    <div>
+        <input type="range" id="d" name="d" min="0" max="10" step=".1">
+        <input type="text" id="dText" size ="3" value="">
+        <label for="d">d (loss rate of predators due to natural death or emigration)</label>
+    </div>
+    
+
+    <canvas id="graph" width="1200" height="500"></canvas>
+
+
+    <script src="calculate.js"></script>
+</body>
+</html>
